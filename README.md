@@ -4,7 +4,7 @@
 [![Rank](https://make.fun/badge/u-donrulezz-pigeon-pitch-one-line-af06c6cf/huydieu9296/u-donrulezz-pigeon-pitch-one-line-af06c6cf/rank.svg)](https://make.fun/bounty/u-donrulezz-pigeon-pitch-one-line-af06c6cf)
 [![Reward](https://make.fun/badge/u-donrulezz-pigeon-pitch-one-line-af06c6cf/huydieu9296/u-donrulezz-pigeon-pitch-one-line-af06c6cf/reward.svg)](https://make.fun/bounty/u-donrulezz-pigeon-pitch-one-line-af06c6cf)
 
-One line, 147 characters, in English: the elevator pitch a city pigeon gives
+One line, 145 characters, in English: the elevator pitch a city pigeon gives
 investors for its startup.
 
 > I'm raising a seed round — literally. I'm the city's fastest coo-rier: lunch delivered by beak before your elevator dings, and I work for crumbs.

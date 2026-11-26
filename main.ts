@@ -18,8 +18,11 @@ const text = readFileSync(entryPath, "utf8").trim();
 if (text !== ENTRY) {
   throw new Error("entry.txt does not match the pitch in main.ts");
 }
-if (text.length < 1 || text.length > 200) {
-  throw new Error(`entry must be 1-200 characters, got ${text.length}`);
+// Count Unicode code points (not UTF-16 units, not bytes): the gate counts
+// characters, and the pitch's em dashes must count as one character each.
+const length = [...text].length;
+if (length < 1 || length > 200) {
+  throw new Error(`entry must be 1-200 characters, got ${length}`);
 }
 if (/\n/.test(text)) {
   throw new Error("entry must be a single line");
@@ -28,4 +31,4 @@ if (/\n/.test(text)) {
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(outDir, { recursive: true });
 writeFileSync(join(outDir, "entry.txt"), text, "utf8");
-console.log(`Wrote ${text.length} characters to ${join(outDir, "entry.txt")}`);
+console.log(`Wrote ${length} characters to ${join(outDir, "entry.txt")}`);
